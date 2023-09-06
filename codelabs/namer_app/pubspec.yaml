@@ -1,0 +1,32 @@
+name: namer_app
+description: A new Flutter project.
+
+publish_to: 'none' # This indicates that we don't intend to publish our package to `pub.dev`.
+
+# By default if the above line is not present, the package is assumed to be published to `pub.dev`
+# package repository, which is the default package repository for Dart packages.
+
+version: 0.0.1+1
+
+environment:
+  sdk: '>=2.19.4 <4.0.0' # This is a version constraint that ensure that Dart SDK is in this range.
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  english_words: ^4.0.0 # This line indicates that the project depends on `english_words` package.
+                        # This version constraint specifies that project is compatible with v4.0.0
+                        # or any higher version but less than the next major version.
+  provider: ^6.0.0      # This line indicates that
+                        # ^6.0.0 specifies the same that project is compatible with v6.0.0 or any
+                        # higher version but less than the next major version.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+    uses-material-design: true
